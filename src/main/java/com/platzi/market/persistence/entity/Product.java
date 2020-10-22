@@ -55,7 +55,7 @@ public class Product {
 	private Boolean status;
 
 	/*
-	 * Relacion con la tabla Category, nullable y updatable, siginifica que por
+	 * Relacion con la tabla Category, insertable y updatable, siginifica que por
 	 * medio de esta relacion no se podra actualizar ni borrar una categoria si se
 	 * requiere debe hacerce directamente con su entidad.
 	 */

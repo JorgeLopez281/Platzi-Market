@@ -25,15 +25,17 @@ public class PurchasesProducts {
 	/*Relacion con la tabla PurchasesProducts con la tabla product, nullable y updatable, siginifica que por medio
 	 * de esta relacion no se podra actualizar ni borrar un producto si se requiere
 	 * debe hacerce directamente con su entidad.*/
+	
 	@ManyToOne
-	@JoinColumn(name = "id_producto", nullable = false, updatable = false)
+	@JoinColumn(name = "id_producto", insertable = false, updatable = false)
 	private Product product;
 	
 	/*Relacion con la tabla PurchasesProducts con la tabla purchase, nullable y updatable, siginifica que por medio
 	 * de esta relacion no se podra actualizar ni borrar una compra si se requiere
 	 * debe hacerce directamente con su entidad.*/
+	
 	@ManyToOne
-	@JoinColumn(name = "id_compra", nullable = false, updatable = false)
+	@JoinColumn(name = "id_compra", insertable = false, updatable = false)
 	private Purchase purchase;
 
 	public PurchasesProductsPK getId() {

@@ -51,7 +51,7 @@ public class Purchase {
 	
 	/*Relacion que tiene la tabla compras con la tabla clientes*/
 	@ManyToOne
-	@JoinColumn(name = "id_cliente", insertable = false, nullable = false)
+	@JoinColumn(name = "id_cliente", insertable = false, updatable = false)
 	private Client client;
 	
 	/*Relacion que tiene la tabla compras con la tabla compras_productos*/

@@ -50,6 +50,7 @@ public class Client {
 	 * (@OneToMany) se refiere a que una entidad puede tener 
 	 * muchos elementos de la otra entidad entonces se deben 
 	 * representar como listas (List<> en Java).*/
+	
 	@OneToMany(mappedBy = "client")
 	private List<Purchase> purchases;
 
